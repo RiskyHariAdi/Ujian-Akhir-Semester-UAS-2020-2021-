@@ -1,2 +1,2 @@
 # MAU LIAT YA,Subscribe bosku :D
-![p](p.jpg)
+![p](p.png)
