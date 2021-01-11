@@ -1,6 +1,33 @@
-``` python
-elif c.lower() == 'l':
- print("=======Daftar Nilai Mahasiswa=======")
+data = []
+data = {}
+print("PROGRAM MENAMPILKAN DAFTAR NILAI MAHASISWA")
+while True:
+    print("")
+    c =input("(L)lihat, (T)ambah, (U)bah, (H)apus, (K)eluar : ")
+    if c.lower() == 't':
+        print("=======Tambah Data=======")
+        nama = input("Nama                :  ")
+        nim = input("Nim                 :  ")
+        tugas = int(input("Masukan Nilai Tugas :  "))
+        uts = int(input("Masukan Nilai UTS   :  "))
+        uas = int(input("Masukan Nilai UAS   :  "))
+        akhir = (0.30 * tugas) + (0.35 * uts) + (0.35 * uas)
+        data[nama] = nim, tugas, uts, uas, akhir
+    elif c.lower() == 'u':
+        print('=======Ubah Data Mahasiswa=======')
+        nama = input('Nama                :  ')
+        if nama in data.keys():
+            nim = input('Nim                 :  ')
+            tugas = int(input("Masukan Nilai Tugas :  "))
+            uts = int(input("Masukan Nilai UTS   :  "))
+            uas = int(input("Masukan Nilai UAS   :  "))
+            akhir = (0.30 * tugas) + (0.35 * uts) + (0.35 * uas)
+            data[nama] = nim, tugas, uts, uas, akhir
+        else:
+            print("Data Nilai Tidak Ada".format(nama))
+
+    elif c.lower() == 'l':
+        print("=======Daftar Nilai Mahasiswa=======")
         print("================================================================================================")
         print(" |NO   |     NAMA      |    NIM    |     TUGAS    |     UTS     |       UAS    |    AKHIR     | ")
         print("================================================================================================")
@@ -12,4 +39,15 @@ elif c.lower() == 'l':
                                                                                                 x[1][2], x[1][3],
                                                                                                 x[1][4], i))
             print("============================================================================================")
-``` python
+
+    elif c.lower() == 'h':
+        print("=======Hapus Data Mahasiswa=======")
+        nama = input("Nama :  ")
+        if nama in data.keys():
+            del data[nama]
+        else:
+            print("Data Nilai Tidak Ada".format(nama))
+
+    elif c.lower() == 'k':
+        print("Keluar")
+        break
