@@ -77,6 +77,7 @@ while True:
     c =input("(L)lihat, (T)ambah, (U)bah, (H)apus, (K)eluar : ")
 ```
 * Berikutnya tambahkan inputan Fungsi Tambahkan
+![baru](foto/baru.png)
 ```python
 if c.lower() == 't':
 print("=======Tambah Data=======")
@@ -89,6 +90,7 @@ print("=======Tambah Data=======")
         data[nama] = nim, tugas, uts, uas, akhir
 ```
 * Tambahkan inputan Fungsi Ubah
+![ubah](foto/ubah.png)
 ```python
 elif c.lower() == 'u':
 print('=======Ubah Data Mahasiswa=======')
@@ -104,6 +106,7 @@ print('=======Ubah Data Mahasiswa=======')
             print("Data Nilai Tidak Ada".format(nama))
 ```
 * Tambahkan inputan Fungsi Tampilkan
+![lihat](foto/lihat.png)
 ```python
 elif c.lower() == 'l':
  print("=======Daftar Nilai Mahasiswa=======")
@@ -120,6 +123,7 @@ elif c.lower() == 'l':
             print("============================================================================================")
 ```
 * Tambahkan inputan Fungsi Hapus
+![hapus](foto/hapus.png)
 ```python
 elif c.lower() == 'h':
 print("=======Hapus Data Mahasiswa=======")
