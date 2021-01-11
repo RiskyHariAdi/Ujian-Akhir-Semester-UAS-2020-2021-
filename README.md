@@ -133,7 +133,8 @@ print("=======Hapus Data Mahasiswa=======")
         else:
             print("Data Nilai Tidak Ada".format(nama))
 ```
-* Tambahkan inputan Fungsi Keluar
+* Tambahkan inputan Fungsi Keluar <br>
+![keluar](foto/keluar.png) <br>
 ```python
 elif c.lower() == 'k':
 print("Keluar")
